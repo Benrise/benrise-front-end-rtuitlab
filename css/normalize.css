@@ -1,0 +1,51 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+button{
+  background: none;
+  border: none;
+} 
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+a:visited
+{
+  color: black;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+li
+{
+  list-style-type: none;
+}
+ul 
+{
+  margin-left: 0;
+  padding-left: 0;
+}
+.wrapper
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contain
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
