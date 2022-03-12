@@ -11,18 +11,29 @@
     <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
 
 
+
     <title>Олимп</title>
 
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header-container">
                 <a href="#" class="logo">
                     <img src="img/triangle.svg" alt="">
                     <span class="company">ОЛИМП <br> СТРАХОВАНИЕ</span>
                 </a>
                 <ul class="header__menu1">
-                    <li><a href="#" class = "">Частным клиентам</a></li>
+                    <li>
+                        <a href="#" class = "menu__private">Частным клиентам</a>
+                        <ul class = "sub-menu__private">
+                            <li><a href="#" class = "">Автомобиль</a></li>
+                            <li><a href="#" class = "">Имущество</a></li>
+                            <li><a href="#" class = "">Путешествие</a></li>
+                            <li><a href="#" class = "">Здоровье</a></li>
+                        </ul>
+
+                    </li>
+
                     <li><a href="#" class = "">Компаниям</a></li>
                     <li><a href="#" class = "">Обслуживание полисов</a></li>
                     <li><a href="#" class = "">Свяжитесь с нами</a></li>
@@ -61,9 +72,77 @@
             <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
             <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
         </div>
+        <div class="to-calc-price">
+            <span >Рассчитайте стоимость</span>
+        </div>
+        <div class="to-price">
+            <a href="index.html#center" class="to-price__arrow" onclick='return goAway()'><img src="./img/arrrow_down3 1.png" alt=""></a>
+        </div>
+        <br>
+        <div class="calc" id = "calc">
+            <div class="to-calc-price2">
+                <span >Рассчитайте стоимость</span>
+            </div>
+            <div class="main-calc" id = "main-calc">
+                <div class="left-calc">
+                    <div class="auto-w">
+                        
+                    </div>
+    
+                    <div class="home-w">
+                        
+                    </div>
+
+                    <div class="adventure-w">
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="center-calc">
+
+                    <div class="center-left">
+                    </div>
+
+                    <div class="center-img" id = "center">
+                        <img src="./img/triangle-auto.png" width="100%" alt="">
+                    </div>
+
+
+                    <div class="center-right">
+
+                    </div>
+
+                </div>
+                <div class="right-calc">
+
+                    <div class="money-w">
+                        
+                    </div>
+                    
+                    <div class="property-right">
+                        <div class="property-w">
+
+
+                        </div>
+                    </div>
+                    <div class="health-w">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src = "./js/touch-control.js"></script>
     <script src = "./js/script.js"></script>
     <script src = "./js/simple-adaptive-slider.min.js"></script>
+
+
+  
+
     
 </body>
 </html>

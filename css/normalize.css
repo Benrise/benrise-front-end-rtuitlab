@@ -1,8 +1,15 @@
+
+@media (prefers-reduced-motion: no-preference){
+  :root {
+      scroll-behavior: smooth;
+  }
+}
 * 
 {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 button{

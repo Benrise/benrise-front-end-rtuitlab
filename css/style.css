@@ -1,5 +1,5 @@
 
-.header__container
+.header-container
 {
     display: flex;
     height: 103px;
@@ -60,7 +60,7 @@ span.company
     font-size: 18px;
     padding-right: 32px;
 }
-.content__container
+.content-container
 {
     max-width: 1440px;
     max-height: 900px;
@@ -76,7 +76,7 @@ span.company
     max-width: 100%;
 }
 @media (max-width:1300px) {
-    .content__container{
+    .content-container{
         max-width: 970px;
     }
  
@@ -84,17 +84,299 @@ span.company
 }
 @media (max-width:992px) 
 {
-    .content__container
+    .content-container
     {
         max-width: 750px;
     }
    
 }
 @media (max-width:767px){
-    .content__container
+    .content-container
     {
         max-width: none;
     }
 }
+/* .header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
+.content__container
+{
+    padding-top: 120px;
+}
+
+*/
+
+.sub-menu__private
+{
+    position: absolute;
+    background-color: black;
+    z-index: 10;
+    padding: 15px;
+}
+
+.sub-menu__private a
+{
+    color: white;
+}
+
+@media (min-width: 767px) {
+    .sub-menu__private{
+        transform: translate(0px, 10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
+    }
+    
+}
+/* ------------------------------------------------- */
+body._pc .header__menu1 > li:hover .sub-menu__private {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    pointer-events: all;
+}
+
+.to-calc-price , .to-price ,.to-calc-price2
+{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-price
+{
+    padding: 0;
+    position: relative;
+}
+.to-price img
+{
+    width: 70px;
+    height: 70px;
+
+}
+.to-calc-price span , .to-calc-price2
+{
+    font-size: 48px;
+}
+.to-calc-price2
+{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
 
 
+
+
+  /* .to-price {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  } */
+
+
+
+
+
+
+  .main-calc
+  {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+  }
+  .home-w
+  {
+      display: flex;
+  }
+  .left-calc, .right-calc
+  {
+      display: flex;
+      flex-direction: column;
+      object-fit: cover;
+  }
+ .property-w
+ {
+     display: flex;
+     justify-content: flex-end;
+ }
+
+
+
+ .center-img img
+{
+  padding-top: 15px;
+}
+  
+
+
+
+/* Animation of arrows and calc words*/
+
+@keyframes arrowAppear {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes arrowDisappear {
+    0% {
+      transform: scale(1);
+    }
+  
+    100% {
+      transform: scale(0);
+    }
+  }
+
+
+
+/*Для меню справа*/
+.menu2__w
+{
+    animation: menu2-anim 1s ease 0s 1 normal forwards;
+}
+
+  @keyframes menu2-anim {
+    0% {
+      opacity: 0;
+      transform: translateX(250px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .to-calc-price
+  {
+      transition: opacity 0.2s;
+  }
+ 
+  .center-img
+  {
+      transform: scale(0);
+  }
+
+  /* Анимация для центральной картинки*/
+  /* .center-img {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} */
+ @-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+
+  /*out*/
+
+
+  /* .center-img {
+	-webkit-animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+} */
+
+@-webkit-keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+  }
+
+
+  .auto-w{background-image: url("../img/1.png");margin:15px;}
+  .home-w{background-image: url("../img/2.png");margin:15px;}
+  .adventure-w{background-image: url("../img/3.png");margin:15px;}
+  .money-w{background-image: url("../img/4.png");margin:15px;}
+  .property-w{background-image: url("../img/5.png");margin:15px;}
+  .health-w{background-image: url("../img/6.png");margin:15px;}
+
+  .auto-w, .adventure-w, .money-w, .health-w
+  {
+      background-size:cover;
+      
+  }
+ 
+  .home-w, .property-w
+  {
+      background-size: cover;
+      
+  }
+  .property-right
+  {
+      display: flex;
+      justify-content: flex-end;
+
+  }
+ 
