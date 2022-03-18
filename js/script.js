@@ -76,18 +76,26 @@ function onVisibleSpaceListener(elementId, cbIn, cbOut) {
   });
 }
 
-var arrowElem = document.querySelector('.to-price')
-var calcWords = document.querySelector('.to-calc-price')
-var calcWords2 = document.querySelector('.to-calc-price2')
-var centerImg = document.querySelector('.center-img')
+let arrowElem = document.querySelector('.to-price')
+let calcWords = document.querySelector('.to-calc-price')
+let calcWords2 = document.querySelector('.to-calc-price2')
+let centerImg = document.querySelector('.center-img')
+let buysLeft = document.querySelectorAll('.center-left ul li')
+let buysRight = document.querySelectorAll('.center-right ul li')
 
 // устанавливаем обработчики для элемента "video"
-onVisibleSpaceListener("calc", 
+onVisibleSpaceListener("center", 
 	el=>{
     arrowElem.style.animation = "arrowDisappear 0.2s ease 0s 1 normal forwards"
     calcWords.style.opacity = "0"
     calcWords2.style.opacity = "1"
     centerImg.style.animation = "scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+    buysLeft.forEach(element =>{
+      element.style.animation = "slide-in-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+    })
+    buysRight.forEach(element =>{
+      element.style.animation = "slide-in-right 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
+    })
 
     // window.alert("элемент в зоне видимости");
     
@@ -96,8 +104,13 @@ onVisibleSpaceListener("calc",
     arrowElem.style.animation = "arrowAppear 0.2s ease 0s 1 normal forwards"
     calcWords.style.opacity = "1"
     calcWords2.style.opacity = "0"
+  
+    
 
 		centerImg.style.animation = "scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
     // window.alert("элемент вне зоны видимости");
 	}
 );
+
+
+
