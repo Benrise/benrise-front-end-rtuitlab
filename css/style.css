@@ -63,7 +63,7 @@ span.company
 .content-container
 {
     max-width: 1440px;
-    max-height: 900px;
+    max-height: max-content;
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
@@ -500,11 +500,11 @@ body._pc .header__menu1 > li:hover .sub-menu__private {
   {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
   }
   .calc-under
   {
     font-size: 26px;
-    border-bottom: solid #292D32 8px;
   }
 
 
@@ -566,4 +566,93 @@ body._pc .header__menu1 > li:hover .sub-menu__private {
    margin: 20px;
    filter: grayscale(100%);
  }
- 
+ .about-us__left
+ {
+   margin-top: 100px;
+ }
+ .about-us__title
+ {
+   background-color: #333333;
+   color: white;
+   font-size: 48px;
+   border-left: solid #333333 53px;
+   border-top: solid #333333 16px;
+   border-bottom: solid #333333 16px;
+   border-right: solid #333333 53px;
+ }
+ .about-us__info
+ {
+   margin-top: 40px;
+   max-width: 520px;
+   max-height: 324px;
+   margin-bottom: 24px;
+   margin-left: 27px;
+ }
+ .about-us__products
+ {
+   background-image: url(../img/products_bg.jpg);
+   width: 692px;
+   height: 626px;
+ }
+ .about-us__list
+ {
+   color: white;
+   margin-left: 80px;
+   padding-top: 80px;
+   font-size: 20px;
+ }
+ .about-us__list > li
+ {
+   padding: 18px
+ }
+ .about-us__w
+ {
+   display: flex;
+ }
+.about-us__right img 
+{
+  max-width: 100%;
+  position: absoulte;
+  left: 290px;
+
+}
+.about-us__logo
+{
+  position: absolute;
+}
+.calc-under img
+{
+  padding: 12px;
+}
+.calc-under > span
+{
+  padding-left: 12px;
+}
+.about-us__right
+{
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.get-it-now
+{
+  margin-top: 50px;
+  text-align: center;
+}
+.get-it-now > span
+{
+  font-size: 48px;
+}
+.get-it-now__img
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.get-it-now__img img
+{
+  padding: 12px;
+  padding-top: 40px;
+}
